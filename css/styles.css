@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 1440px;
+    margin: auto;
+    border: 5px solid white;
+    background-color: #1b1e23;
+    background: url(../images/starry-night-img.jpg);
+    background-repeat: fixed;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+}
+
+.nav-item a {
+    color: rgb(255, 255, 255) !important;
+}
+
+.nav-item a:hover {
+    color: #000000 !important;
+    background-color: #fff !important;
+}
+
+.hero .cloud {
+    width: 10vw;
+    max-width: 300px;
+}
+
+.hero .left {
+    left: 15%;
+}
+
+.hero .right {
+    right: 15%;
+}
+
+.hero .mountain {
+    max-width: 70vw;
+}
+
+#about .bioImg{
+    max-width: 20vw;
+}
+
+@media (max-width:576px) {}
+
+@media (max-width:768px) {}
