@@ -3,19 +3,43 @@ body {
     padding: 0;
     max-width: 1440px;
     margin: auto;
-    border: 5px solid white;
     background-color: #1b1e23;
     background: url(../images/starry-night-img.jpg);
     background-repeat: fixed;
     background-size: cover;
     color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
 }
 
-.nav-item a {
+h1 {
+    font-size: 4.8rem !important;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h1, h2, h3, p, label, input {
+    letter-spacing: 1px;
+}
+
+hr {
+    margin: 2.5% auto;
+    border: dotted #fff 6px;
+    border-bottom: none;
+    width: 4%;
+}
+
+.nav-item a, .hero a, #contact a {
     color: rgb(255, 255, 255) !important;
+    text-decoration: none !important;
 }
 
-.nav-item a:hover {
+.nav-item a:hover, .hero .contactLink:hover, #contact a:hover {
     color: #000000 !important;
     background-color: #fff !important;
 }
@@ -35,12 +59,36 @@ body {
 
 .hero .mountain {
     max-width: 70vw;
+    position: relative;
+    top:50%;
+    transform:translateY(-100%);
 }
 
-#about .bioImg{
+.hero .btn {
+    color: black !important;
+}
+
+#about .bioImg {
     max-width: 20vw;
 }
 
-@media (max-width:576px) {}
+#contact form {
+    width: 50%;
+}
 
-@media (max-width:768px) {}
+#contact form .btn {
+    width: 50%;
+    margin: auto;
+}
+
+@media (max-width:576px) {
+    #contact form {
+        width: 75%;
+    }
+    .hero .mountain {
+        top:25%;
+    }
+}
+
+@media (max-width:768px) {
+}

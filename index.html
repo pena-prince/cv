@@ -8,11 +8,12 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Prince Del Peña</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md white bg-none navbar-dark">
+    <nav id="nav" class="navbar fixed-top navbar-expand-md white bg-none navbar-dark">
         <div class="ml-auto text-right">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +31,7 @@
                         <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link d-none" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -39,13 +40,13 @@
             </div>
         </div>
     </nav>
-    <section id="top" class="hero container-fluid d-flex flex-column">
+    <section id="top" class="hero container-fluid d-flex flex-column vh-100 mt-5 justify-content-center">
         <img src="images/cloud.png" alt="cloud-img" class="cloud left img-fluid position-relative">
-        <h1 class="display-1 mx-auto text-center typewrite" data-period="1500"
-            data-type='[ "Hi, I&apos;m Prince!", "Design.", "Develop.", "Deploy." ]'>
+        <h1 class="display-2 mx-auto text-center typewrite" data-period="1500"
+            data-type='["Design.", "Develop.", "Deploy." ]'>
         </h1>
-        <p class="lead mx-auto text-center">Do you have a project on your mind?</p>
-        <a href="#contact" class="btn btn-primary mx-auto">Let's Chat</a>
+        <p class="lead w-75 mx-auto text-center">Are you a business seeking for a web presence or an employer looking to hire?</p>
+        <a href="#contact" class="btn btn-light mx-auto">Let's Chat</a>
         <img src="images/cloud.png" alt="cloud-img" class="cloud right ml-auto img-fluid position-relative">
         <img src="images/mountain.png" alt="mountain-img" class="mountain img-fluid mx-auto">
     </section>
@@ -56,10 +57,11 @@
                     <img src="./images/pic.jpg" alt="bio-img" class="bioImg rounded-circle">
                 </div>
                 <div class="col d-flex flex-column align-items-center justify-content-center ml-lg-5">
-                    <h1 class="text-center my-lg-4 mb-md-4 mt-md-4">About Me</h1>
-                    <p class="text-center mb-3">Has a Bachelor's Degree in Information Technology under the belt, responsible
+                    <h2 class="text-center my-5">About Me</h2>
+                    <p class="text-center mb-3">Has a Bachelor's Degree in Information Technology under the belt,
+                        responsible
                         on designing, coding and modifying websites, from layout to
-                        function and according to a project specifications. Strive to create visually appealing sites
+                        function and according to the project specifications. Strive to create visually appealing sites
                         that
                         feature user-friendly design and clear navigation.</p>
                     <div class="container d-flex align-items-center justify-content-center w-75">
@@ -67,18 +69,85 @@
                             rel="noopener noreferrer"><img src="images/linkedin.png" alt="linkedin-social-icon"
                                 class="img-fluid socialIcon mr-3" /></a>
                         <a href="https://github.com/pena-prince" target="_blank" rel="noopener noreferrer"><img
-                                src="images/github.png" alt="github-social-icon" class="img-fluid socialIcon mx-2" /></a>
+                                src="images/github.png" alt="github-social-icon"
+                                class="img-fluid socialIcon mx-2" /></a>
                         <a href="https://www.facebook.com/princedel.pena" target="_blank" rel="noopener noreferrer"><img
-                                src="images/facebook.png" alt="facebook-social-icon" class="img-fluid socialIcon ml-3" /></a>
+                                src="images/facebook.png" alt="facebook-social-icon"
+                                class="img-fluid socialIcon ml-3" /></a>
                     </div>
                 </div>
             </div>
     </section>
-    <section id="skills">
-        <div class="container">
-            
+    <hr>
+    <section id="skills" class="mt-5">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center">What I Can Do</h2>
+                </div>
+            </div>
+            <div class="row mt-5 d-flex justify-content-center align-items-center">
+                <div class="col-sm-10 col-md-8 d-flex justify-content-center align-items-center">
+                    <img src="./images/web-development-img2.png" alt="web-development-img" class="img-fluid"
+                        width="100px">
+                    <div class="col pr-0">
+                        <h3>Web Development</h3>
+                        <p>I am a developer, so I can put layouts together from design concept to deployment, running
+                            across devices using the latest technologies available.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 d-flex justify-content-center align-items-center ">
+                <div class="col-sm-10 col-md-8 d-flex justify-content-center align-items-center">
+                    <div class="col pl-0">
+                        <h3>Software Testing</h3>
+                        <p>I have extraordinary patience and an eye for detail. The challenge on finding the bug under a
+                            haystack is fun and exciting!</p>
+                    </div>
+                    <img src="./images/software-qa-img2.png" alt="software-qa-img" class="img-fluid" width="100px">
+                </div>
+            </div>
         </div>
     </section>
+    <hr>
+    <section id="contact" class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="mb-5">Get In Touch</h2>
+                    <p class="mb-5">Let's create awesome stuff together!</p>
+                    <p class="mb-5">You can email me at <a href="mailto:conrade2005@yahoo.com"
+                            class="border-bottom">conrade2005@yahoo.com</a> or use the contact form below</p>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center align-items-center">
+            <form action="https://getform.io/f/4d3b2670-084b-410b-8ad8-1e5968a4acfd" method="POST"
+                class="d-flex flex-column">
+                <!-- <input type="text" name="name">
+            <input type="email" name="email">
+            <input type="tel" name="tel"> -->
+                <label for="fName">Your Full Name:</label>
+                <input type="text" name="fName" id="fName" placeholder="Full Name">
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" id="email" required placeholder="username@domain.com">
+                <label for="message">Your Message:</label>
+                <textarea name="message" id="message" rows="10" cols="30"></textarea>
+                <button class="btn btn-light mt-3" type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <footer class="container d-flex flex-column align-items-center justify-content-center mt-5">
+        <div class="container d-flex align-items-center justify-content-center w-75">
+            <a href="https://www.linkedin.com/in/prince-del-pena" target="_blank" rel="noopener noreferrer"><img
+                    src="images/linkedin.png" alt="linkedin-social-icon" class="img-fluid socialIcon mr-3" /></a>
+            <a href="https://github.com/pena-prince" target="_blank" rel="noopener noreferrer"><img
+                    src="images/github.png" alt="github-social-icon" class="img-fluid socialIcon mx-2" /></a>
+            <a href="https://www.facebook.com/princedel.pena" target="_blank" rel="noopener noreferrer"><img
+                    src="images/facebook.png" alt="facebook-social-icon" class="img-fluid socialIcon ml-3" /></a>
+        </div>
+        <p class="mt-3">&copy;Prince Del Peña</p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
