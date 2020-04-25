@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    max-width: 1440px;
+    max-width: 1440px !important;
     margin: auto;
     background-color: #1b1e23;
     background: url(../images/starry-night-img.jpg);
@@ -20,7 +20,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 h1, h2, h3, p, label, input {
@@ -59,9 +59,12 @@ hr {
 
 .hero .mountain {
     max-width: 70vw;
-    position: relative;
-    top:50%;
-    transform:translateY(-100%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    transform: translateY(-100%);
+    z-index: -50;
 }
 
 .hero .btn {
@@ -73,7 +76,7 @@ hr {
 }
 
 #contact form {
-    width: 50%;
+    width: 60%;
 }
 
 #contact form .btn {
@@ -84,9 +87,6 @@ hr {
 @media (max-width:576px) {
     #contact form {
         width: 75%;
-    }
-    .hero .mountain {
-        top:25%;
     }
 }
 
